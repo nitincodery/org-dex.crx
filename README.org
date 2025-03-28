@@ -3,7 +3,8 @@
 #+EMAIL: nitin@codery.xyz
 #+VERSION: 1.0.0
 
-* Org-Dex
+[[./icons/icon128.png]]
+
 Org-Dex is a lightweight Chrome extension that allows users to quickly copy all open tab titles and URLs in Org-mode syntax for easy note-taking and session management.
 
 * Features
