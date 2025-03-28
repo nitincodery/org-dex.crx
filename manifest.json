@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Org-Dex",
+  "version": "1.2",
+  "description": "Copies all tabs of the current window in org heading list as session having org links with tab title and link.",
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }     
+}
+
