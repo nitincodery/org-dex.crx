@@ -1,0 +1,42 @@
+#+TITLE: Org-Dex Chrome Extension - Save and Organize Browser Sessions in Org-mode
+#+AUTHOR: Nitin Choudhary
+#+EMAIL: nitin@codery.xyz
+#+VERSION: 1.0.0
+
+* Org-Dex
+Org-Dex is a lightweight Chrome extension that allows users to quickly copy all open tab titles and URLs in Org-mode syntax for easy note-taking and session management.
+
+* Features
+- Fetches all open tabs in the current Chrome window.
+- Formats the tab links using Org-mode syntax.
+- Allows users to add a session name and optional description.
+- Automatically copies the formatted session to the clipboard.
+
+* Installation
+1. Clone or download this repository.
+2. Open Chrome and go to =chrome://extensions/=.
+3. Enable Developer Mode (toggle in the top right corner).
+4. Click on "Load unpacked" and select the extension folder.
+5. The extension is now installed and ready to use.
+
+* Usage
+1. Click on the Org-Dex extension icon.
+2. Enter a session name and an optional description.
+3. Click the "Fetch Tabs" button.
+4. The session details, including tab titles and URLs, will be copied to your clipboard in Org-mode format.
+5. Paste the copied content into your Org document.
+
+* Example Output
+#+BEGIN_EXAMPLE
+Session Name
+[2025-03-28 Fri 14:30]
+Optional session description
+*** [[https://example.com][Example Website]]
+*** [[https://another-site.com][Another Site]]
+#+END_EXAMPLE
+
+* Technical Details
+- Uses =chrome.tabs.query()= to fetch all open tabs.
+- Formats tab data as Org-mode links.
+- Uses =navigator.clipboard.writeText()= to copy the text.
+- Closes the popup automatically after copying.
